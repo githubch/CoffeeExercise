@@ -8,8 +8,7 @@ import static junit.framework.Assert.assertEquals;
 public class AmericanoTest {
     @Test
     public void shouldPriceOfAmericanoIs() throws Exception {
-        IPrice [] drinks = new IPrice[]{new Espresso(), new Water()};
-        Americano americano = new Americano(drinks);
+        Americano americano = new Americano();
         assertEquals(0.5, americano.getPrice());
     }
 }

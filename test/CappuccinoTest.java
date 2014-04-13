@@ -8,8 +8,7 @@ import static junit.framework.Assert.assertEquals;
 public class CappuccinoTest {
     @Test
     public void shouldPriceOfCappuccinoIs() throws Exception {
-        IPrice [] drinks = new IPrice[]{new Espresso(), new SteamMilk(), new SteamMilk()};
-        Cappuccino cappuccino = new Cappuccino(drinks);
+        Cappuccino cappuccino = new Cappuccino();
         assertEquals(1, Double.compare(cappuccino.getPrice(), 1.7));
     }
 }

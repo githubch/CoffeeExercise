@@ -8,8 +8,7 @@ import static junit.framework.Assert.assertEquals;
 public class MochaTest {
     @Test
     public void shouldPriceOfMochaIs() throws Exception {
-        IPrice [] drinks= new IPrice[]{new SteamMilk(), new Espresso(), new ChocolateSyrup(), new WhipCream()};
-        Mocha mocha = new Mocha(drinks);
+        Mocha mocha = new Mocha();
         assertEquals(2.1, mocha.getPrice());
     }
 }

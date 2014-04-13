@@ -8,8 +8,7 @@ import static junit.framework.Assert.assertEquals;
 public class CortadoTest {
     @Test
     public void shouldPriceOfCortadoIs() throws Exception {
-        IPrice [] drinks = new IPrice[]{new Espresso(), new Espresso(), new SteamMilk()};
-        Cortado cortado = new Cortado(drinks);
+        Cortado cortado = new Cortado();
         assertEquals(1.6, cortado.getPrice());
 
     }
